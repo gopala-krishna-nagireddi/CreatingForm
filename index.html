@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>User Registration</h1>
+      <form id="regForm" submit="validateForm()">
+        <section class="content-section">
+          <label for="username">Username:</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            placeholder="Please enter your name"
+          />
+          <p class="err-msg"></p>
+        </section>
+        <section class="content-section">
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Please Enter Your email"
+          />
+          <p class="err-msg"></p>
+        </section>
+        <section class="content-section">
+          <label for="password">Password:</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Create a password"
+          />
+          <p class="err-msg"></p>
+        </section>
+        <section class="content-section">
+          <label for="confirmPass">Confirm Password:</label>
+          <input
+            id="confirmPass"
+            name="confirmPass"
+            type="password"
+            placeholder="Confirm you password"
+          />
+          <p class="err-msg"></p>
+        </section>
+        <section class="content-section">
+          <label for="birthDate">Date of Birth:</label>
+          <input id="birthDate" name="birthDate" type="date" />
+          <p class="err-msg"></p>
+        </section>
+        <section class="gender-container-section">
+          <label>Gender:</label>
+          <section class="gender-section">
+            <input id="male" name="gender" value="Male" type="radio" />
+            <label for="male">Male</label>
+          </section>
+          <section class="gender-section">
+            <input id="female" name="gender" value="Female" type="radio" />
+            <label for="female">Female</label>
+          </section>
+          <section class="gender-section">
+            <input id="other" name="gender" value="Others" type="radio" />
+            <label for="other">Others</label>
+          </section>
+          <p class="err-msg"></p>
+        </section>
+        <section class="country-container-section">
+          <label>Country:</label>
+          <select>
+            <option value="Australia">Australia</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Canada">Canada</option>
+            <option value="France">France</option>
+            <option value="Germanu">Germany</option>
+            <option value="India">India</option>
+            <option value="Japan">Japan</option>
+            <option value="South Africa">South Africa</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="United States">United States</option>
+          </select>
+          <p class="err-msg"></p>
+        </section>
+        <section class="terms-condition-section">
+          <input id="terms" type="checkbox" />
+          <label for="terms">Please accept terms and conditions</label>
+          <p class="err-msg"></p>
+        </section>
+      </form>
+      <button type="submit" form="regForm">Register</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
